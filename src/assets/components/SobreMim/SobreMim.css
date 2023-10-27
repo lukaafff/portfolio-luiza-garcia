@@ -1,0 +1,59 @@
+
+
+.bloco {
+    display: flex;
+    align-items: center;
+    min-height: 500px; 
+    width: 80%;
+    background: var(--bg-color2);
+}
+
+.desenho {
+    max-width: 100%;
+    width: 35%;
+    padding-left: 3%;
+}
+
+.sobre {
+    width: 65%;
+    text-align: justify;
+    padding: 0 5%;
+}
+
+.sobre p {
+    font-size: clamp(1rem, 2.73vw, 1.2rem);
+    margin-top: 1rem;
+}
+
+.sobre .txt {
+    line-height: 1.5;
+    text-indent: 30px;
+}
+
+.sobre h4 {
+    color: var(--detail-color);
+    margin-bottom: 1rem;
+    font-size: clamp(1.2rem, 2.73vw, 1.2rem);
+}
+
+.sobre h3 {
+    font-size: clamp(1.7rem, 2.73vw, 1.2rem);
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 1012px) {
+    .sobreMim {
+        margin-left: -10%;
+    }
+    .bloco {
+        flex-direction: column;
+        padding: 7% 0 7% 0;
+    }
+    .desenho {
+        width: 65%;
+        margin-bottom: 7%;
+    }
+    .sobre {
+        width: 75%;
+    }
+}

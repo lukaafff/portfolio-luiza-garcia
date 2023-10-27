@@ -1,0 +1,80 @@
+.inicio {
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+}
+
+.desenhoIMG {
+    max-width: 100%;
+    width: 30%;
+    margin-right: 50px;
+}
+
+.apresentacao {
+    flex: 1;
+}
+
+.apresentacao h1 {
+    font-size: clamp(6rem, 15vw, 9rem);
+    color: var(--detail-color);
+}
+
+.apresentacao h1 span i {
+    color: var(--text-color);
+    font-size: clamp(4rem, 10vw, 8rem); 
+    animation: rotateHand 2s infinite;
+    transform-origin: center;
+    display: inline-block; 
+}
+
+.apresentacao h2 {
+    font-size: clamp(2rem, 5vw, 5rem); 
+}
+
+.apresentacao h3 {
+    font-size: clamp(1rem, 2.73vw, 2.73rem);
+    opacity: 0.6;
+}
+
+@keyframes rotateHand {
+    0% {
+      transform: rotate(15deg);
+    }
+    50% {
+      transform: rotate(-15deg);
+    }
+    100% {
+      transform: rotate(15deg);
+    }
+}
+
+@media (max-width: 428px){
+    .apresentacao h1 {
+        font-size: clamp(3rem, 15vw, 6rem);
+    }
+    
+    .apresentacao h2 {
+        font-size: clamp(2rem, 5vw, 5rem); 
+    }
+    
+    .apresentacao h3 {
+        font-size: clamp(1rem, 2.73vw, 2.73rem);
+        opacity: 0.6;
+    }
+}
+
+@media (max-width: 1012px){
+    .inicio {
+        margin-bottom: 0;
+        margin-top: 0;
+        margin-left: -7%;
+    }
+    .container {
+        flex-direction: column;
+        padding-left: 10%;
+        padding-top: 150px;
+    }
+    .desenhoIMG {
+        margin: 0;
+        width: 50%;
+    }
+}

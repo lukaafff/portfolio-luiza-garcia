@@ -1,0 +1,26 @@
+.links {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 83px;
+    position: fixed;
+    width: 40px;
+    z-index: 2; 
+}
+
+.links ul li i {
+    font-size: 36px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.links ul li i:hover {
+    color: var(--detail-color);
+}
+
+@media (max-width: 1012px){ 
+    .links {
+        display: none;
+    }
+}
