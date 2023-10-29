@@ -28,7 +28,7 @@ const Navbar = () => {
                     <ul className={menuOpen ? "menu-open" : ""}>
                     <li><a href="#" onClick={handleMenuItemClick}>Inicio</a></li>
                     <li><a href="#" onClick={handleMenuItemClick}>Sobre Mim</a></li>
-                    <li><a href="#" onClick={handleMenuItemClick}>Habilidades</a></li>
+                    <li><a href="#" onClick={handleMenuItemClick}>Conhecimentos</a></li>
                     <li><a href="#" onClick={handleMenuItemClick}>Projetos</a></li>
                 </ul>
                 

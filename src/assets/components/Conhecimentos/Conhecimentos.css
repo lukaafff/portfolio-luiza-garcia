@@ -1,0 +1,97 @@
+.projetos {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    min-height: 600px;
+    height: auto;
+  }
+
+  .texto {
+    padding-right: 4.5rem;
+    padding-bottom: 24rem;
+}
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+    padding-right: 60px;
+    max-width: 50%;
+    margin-left: 9rem;
+
+  }
+  
+  .card {
+    position: relative;
+    width: 10rem;
+    height: 8.3rem;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding: 20px;
+    background: var(--bg-color2);
+    border: 1px solid #ccc;
+    text-align: center;
+    cursor: pointer;
+    border-radius: .5rem;
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .card:hover {
+    background: rgba(0, 0, 0, 0.5);
+    color: var(--detail-color);
+  }
+  
+  .card:hover::before {
+    content: attr(data-text); /* Mostra o nome da tecnologia ao passar o mouse */
+    position: absolute;
+    bottom: -.0090rem; 
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: clamp(1rem, 2.73vw, 1.2rem);
+    font-weight: bold;
+    color: white;
+  }
+  
+  .tech {
+    font-size: 5rem;
+  }
+
+  .card .tech {
+    font-size: 5rem;
+    transition: all 0.3s ease; 
+  }
+
+  .card:hover .tech {
+    transform: scale(0.8);
+  }
+
+  @media (max-width: 1012px) {
+    .projetos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .cards {
+      max-width: none; 
+      margin: 0 auto; 
+    }
+  
+    .card {
+      margin-left: 0; 
+    }
+  
+    .texto {
+      padding-bottom: 3rem;
+      padding-right: -1rem;
+    }
+  }
+  
+
+  @media (max-width: 1520px) {
+    .cards {
+        margin-left: 0;
+    }
+  }

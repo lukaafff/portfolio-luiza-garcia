@@ -1,0 +1,13 @@
+.msg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 300px;
+    background-color: #ccc;
+    color: var(--bg-color);
+}
+
+.ap {
+    padding-bottom: 15rem;
+}

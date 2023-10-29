@@ -18,16 +18,17 @@
     display: inline-block;
     margin: 0 5px;
     overflow: hidden;
+    padding: 7px 0;
   }
   .navbar ul li a{
     color: var(--text-color);
     font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
+    padding: 0px 13px;
   }
-  a:hover{
-    background: var(--detail-color);
-    transition: .5s;
+  li:hover{
+    background-color: var(--detail-color);
+    transition: .3s;
+    border-radius: 15px;
   }
   label.config {
     font-size: 30px;
