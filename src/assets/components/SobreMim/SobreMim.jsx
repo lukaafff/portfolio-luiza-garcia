@@ -1,11 +1,11 @@
 import React from 'react';
 import './SobreMim.css';
 
-import Desenho from '../../imgs/Captura de tela 2023-10-15 165913.png'
+import Desenho from '../../imgs/luiza cbg.png'
 
 const SobreMim = () => {
   return (
-    <div className="container sobreMim">
+    <div className="container sobreMim" id='sobreMim'>
       <div className="bloco">
         <img src={Desenho} alt="" className='desenho' />
         <div className="sobre">

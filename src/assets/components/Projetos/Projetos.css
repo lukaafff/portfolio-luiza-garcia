@@ -1,0 +1,109 @@
+.projetos-container {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+
+.titulo {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.cardP {
+  width: 350px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.cardP img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+  transition: opacity 0.3s ease-out;
+}
+
+.cardP:hover img {
+  opacity: 0.9; 
+}
+
+.cardP h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.cardP p {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.cardP:hover {
+  color: var(--detail-color);
+}
+
+.info {
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
+  width: 80%;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.buttons button {
+  padding: 5px 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.buttons button:hover {
+  background-color: var(--detail-color);
+  color: var(--text-color);
+}
+
+.botoes-categoria {
+  margin-bottom: 40px;
+}
+
+.botoes-categoria button {
+  padding: 8px 16px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  background-color: var(--detail-color);
+  color: var(--bg-color);
+  margin-bottom: 20px;
+}
+
+.botoes-categoria button:hover {
+  background-color: var(--bg-color2);
+  color: var(--text-color);
+}

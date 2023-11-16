@@ -9,6 +9,11 @@
     z-index: 2; 
 }
 
+.links ul li a {
+    text-decoration: none;
+    color: var(--text-colorz);
+}
+
 .links ul li i {
     font-size: 36px;
     margin-bottom: 15px;

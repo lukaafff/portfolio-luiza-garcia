@@ -5,8 +5,8 @@ import DesenhoLuiza from '../../imgs/luiza desenho.png';
 
 const Inicio = () => {
   return (
-    <div>
-        <div className='container inicio'>
+    <div id='inicio'>
+        <div className='container inicio' >
             <img src={DesenhoLuiza} alt="Ilustração Luiza Garcia" className='desenhoIMG'/>
             <div className='apresentacao'>
                 <h1>Olá <span><i class='bx bxs-hand'></i></span> ,</h1>

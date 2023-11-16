@@ -13,10 +13,10 @@ const tecnologias = [
 
 const Conhecimentos = () => {
   return (
-    <div className='container projetos'>
+    <div className='container conhecimentos' id='conhecimentos'>
       <div className="texto">
         <h1>Conhecimentos</h1>
-        <p>*passe o mouse em cima de cada card*</p>
+        <p>Essas são as tecnologias eu estou familiarizada</p>
       </div>
       <div className="cards">
         {tecnologias.map(tecnologia => (

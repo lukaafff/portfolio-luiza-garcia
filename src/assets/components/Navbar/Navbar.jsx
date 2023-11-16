@@ -23,18 +23,18 @@ const Navbar = () => {
                     <i className="bx bx-menu"></i>
                 </label>
 
-                <img src={LogoIMG} alt="Logo Luiza Garcia" className='logo'/>
+                <a href="#inicio"><img src={LogoIMG} alt="Logo Luiza Garcia" className='logo'/></a>
 
                     <ul className={menuOpen ? "menu-open" : ""}>
-                    <li><a href="#" onClick={handleMenuItemClick}>Inicio</a></li>
-                    <li><a href="#" onClick={handleMenuItemClick}>Sobre Mim</a></li>
-                    <li><a href="#" onClick={handleMenuItemClick}>Conhecimentos</a></li>
-                    <li><a href="#" onClick={handleMenuItemClick}>Projetos</a></li>
+                    <li className='linkLI'><a href="#inicio" onClick={handleMenuItemClick}>Inicio</a></li>
+                    <li className='linkLI'><a href="#sobreMim" onClick={handleMenuItemClick}>Sobre Mim</a></li>
+                    <li className='linkLI'><a href="#conhecimentos" onClick={handleMenuItemClick}>Conhecimentos</a></li>
+                    <li className='linkLI'><a href="#projetos" onClick={handleMenuItemClick}>Projetos</a></li>
                 </ul>
                 
                 <label className='config'>
-                    <i class='bx bxs-cog'></i>
-                    <i class='bx bx-chevron-down'></i>
+                    <i className='bx bxs-cog'></i>
+                    <i className='bx bx-chevron-down'></i>
                 </label>
                 
             </nav>
